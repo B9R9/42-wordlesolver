@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hive-Rushe-Worlde</title>
+	<link rel="stylesheet" href="./wordle.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2cfa102309.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div id="menubar">
+			<nav class="boxmenu">
+				<div id="menu">
+					<button id="open">STATISTICS</button>
+				</div>
+				<div id="titre">
+					<p>Wordle</p>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+
+		<div id="array">
+			<div class="boxletter">
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+
+			</div>
+		</div>
+		   <textarea id="story" name="story" rows="1" cols="1"></textarea><!--area text-->
+
+
+
+        <div class="keyboard-container">
+
+            <div class="keyboard-column-left">
+
+                <div class="keyboard-row-1">
+
+                    <kbd id="backspaced"><input type="button" name="backspc" class="kbd-key" id="backspc"><i class="fas fa-backspace" id="bkspc"></i></kbd><!--delete text-->
+                </div><!-- end of keyboard-row-1 -->
+
+                <div class="keyboard-row-2">
+                    <kbd><input type="button" class="kbd-key" value="Q"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="W" id="game1"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="E"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="R"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="T"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="Y"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="U"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="I"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="O"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="P"></kbd>
+
+                </div><!-- end of keyboard-row-2 -->
+
+                <div class="keyboard-row-3">
+                    <kbd><input type="button" class="kbd-key" value="A" id="game2"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="S" id="game3"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="D" id="game4"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="F"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="G"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="H"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="J"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="K"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="L"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="M"></kbd>
+                    <kbd id="enter"><input type="button" name="enter" id="etr" class="kbd-key"><i class="fas fa-arrow-left" id="arrowenter"></i><p id="penter"><strong>ENTER</strong></p></kbd><!--enter button-->
+                </div><!-- end of keyboard-row-3 -->
+
+                <div class="keyboard-row-4">
+
+                    <kbd><input type="button" class="kbd-key" value="Z"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="X"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="C"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="V"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="B"></kbd>
+                    <kbd><input type="button" class="kbd-key" value="N"></kbd>
+                </div><!-- end of keyboard-row-4 -->
+            </div><!-- end of keyboard-column-left -->
+
+        </div><!-- end of keyboard-container -->
+
+		<div class="popupcontaineur">
+			<div class="popupback">
+				<div class="content">
+					<p class="stats">Played</p>
+				</div>
+				<div class="content">
+					<p class="stats">%victory</p>
+				</div>
+				<div class="content">
+					<p class="stats">Current streak</p>
+				</div>
+				<div class="content">
+					<p class="stats">Max streak</p>
+				</div>
+				<div class="content">
+					<button id="back" class="stats">Close</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="clavier">
+			<div id="line">
+				<kbd><input type ="button" class="capskeyboard" value"Q"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value"W"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "E"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "R"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "T"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "Y"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value"U"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "I"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "O"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "P"></kbd>
+			</div>
+			<div id="line2">
+				<kbd><input type ="button" class="capskeyboard" value "A"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "S"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "D"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "F"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "G"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "H"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "J"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "K"></kbd>
+			    <kbd><input type ="button" class="capskeyboard" value "L"></kbd>
+			</div>
+			<div id="line3">
+				<kbd><input type ="button" id ="enter" class="capskeyboard" value "enter"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "Z"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "X"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "C"></kbd>
+			    <kbd><input type ="button" class="capskeyboard" value "V"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "B"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "N"></kbd>
+				<kbd><input type ="button" class="capskeyboard" value "M"></kbd>
+				<kbd><input type ="button" class="capskeyboard"	value "delete" id="backspc"></kbd>
+				<!-- </div>	<i class="fa-solid fa-delete-left"></i> -->
+			<!-- </div> -->
+		<!-- </div> -->
+
+	</main>
+</body>
+<script src="./wordle.js"></script>
+</html>

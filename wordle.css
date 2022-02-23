@@ -1,0 +1,303 @@
+html{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	overflow: hidden;
+}
+
+header{
+	border-bottom: 2px solid black;
+	width: 103%;
+	margin-left: -2%;
+	height: 50px;
+}
+/* #menubar{
+	display: inline-block;
+} */
+#menu{
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: -3%;
+}
+#open, .close{
+	border: none;
+	background: none;
+}
+
+#open:hover{
+	cursor:pointeur;
+	transform: scale(1.2);
+}
+
+#titre{
+	font-size: 170%;
+	display: inline-block;
+	margin-left: 39%;
+	margin-top: -1%;
+}
+
+
+main{
+	width: 100%;
+	height: 650px;
+}
+#array{
+	width: 20%;
+	height: 50%;
+	margin-top: 1%;
+	margin-left: 40%;
+}
+
+.box{
+	border: 1px solid black;
+	width: 17%;
+	height: 50px;
+	display: inline-block;
+	margin-left: 1%;
+}
+
+#clavier{
+	width: 50%;
+	height: 38%;
+	margin-top: 1%;
+	margin-left: 24%
+}
+
+#line{
+	padding-top: 2%;
+	padding-left: 14%;
+}
+
+#line2{
+	padding-top: 1%;
+	padding-left: 18%;
+}
+#line3{
+	padding-top: 1%;
+	padding-left: 10%;
+}
+.capskeyboard{
+	border: 1px solid black;
+	width: 7%;
+	height: 50px;
+	display: inline-block;
+	border-radius: 25%;
+	margin-left:1%;
+	background: rgba(128, 128, 128, 0.692);
+}
+
+.capskeyboard p{
+	text-align: center;
+}
+.capskeyboard:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+#enter{
+	width: 15%;
+	border-radius: 20%;
+}
+#enter:hover{
+	transform:scale (0.2);
+}
+#delete{
+	width:15%;
+	border-radius: 20%;
+}
+
+.popupcontaineur{
+	 position: absolute;
+	 left: -600px;
+	width: 20%;
+	height: 50%;
+	margin-top: 1%;
+	 z-index: 99;
+	 transition: 1.5s;
+}
+
+.popupback{
+	background: white;
+}
+
+.content{
+	width: 110%;
+	margin-top: 5%;
+	border: 1px solid black;
+	border-radius: 50px;
+	background: rgba(128, 128, 128, 0.692);
+}
+.stats{
+	text-align: right;
+	margin-right: 15%;
+}
+
+#back{
+	width: 20%;
+	height: 15%;
+	background: none;
+	border: none;
+	margin-left: 60%;
+	margin-top: 4%;
+}
+#back:hover, .stats:hover{
+	transform:scale(1.1);
+	transition: 2s;
+}
+
+
+/* body page */
+body {
+	text-align: center;
+}
+
+/* main container */
+.keyboard-container {
+	border-radius: 4px;
+	border: 2px solid black;
+	width: 50%;
+	margin-left: 25%;
+
+}
+
+/* right column links */
+.keyboard-column-right {
+	display: inline-flex;
+	margin-left: 92%;
+	margin-right: 5px;
+
+}
+
+.keyboard-column-right a {
+	text-decoration: none;
+
+}
+
+
+/* left column keys */
+.keyboard-column-left {
+	margin-top: -25%;
+	margin-left: -5%;
+}
+
+
+/*Keys of main container */
+.keyboard-row-1,
+.keyboard-row-2,
+.keyboard-row-3,
+.keyboard-row-4,
+.keyboard-row-5 {
+	display: inline-flex;
+}
+
+.keyboard-row-2 {
+	margin-left: -7%;
+}
+
+.keyboard-row-4 {
+	margin-left: 4px;
+}
+
+
+.keyboard-row-5 {
+	margin-left: -5px;
+	margin-bottom: 60px;
+}
+
+.kbd-key,
+.kbd-key2,
+.kbd-key3 {
+	display: grid;
+	border-radius: 4px;
+	border: 2px solid black;
+	width: 50px;
+	height: 50px;
+	color: black;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.kbd-key:hover,
+.kbd-key2:hover,
+.kbd-key3:hover {
+	opacity: 0.5;
+}
+
+
+/* big keys */
+#backspaced,
+#enter
+{
+	width: 120px;
+	height: 50px;
+}
+
+/* mod key */
+#mod {
+	width: 100px;
+	height: 50px;
+}
+
+/* icons main container */
+.keyboard-container a,
+i {
+	align-self: center;
+
+}
+
+
+/* title */
+h1,
+#pheader,
+#pfooter {
+	font-family: 'Arial';
+}
+
+
+/* input enter key + input delete key + input caps lock*/
+#etr,
+#backspc,
+#blck {
+	width: 120px;
+	height: 50px;
+}
+
+/* text enter key */
+#penter {
+	margin-top: -30%;
+	margin-left: 6%;
+}
+
+
+/* text escap key */
+#pesc {
+	margin-top: -65%;
+
+}
+
+
+/* icon delete key */
+#bkspc {
+	display: flex;
+	z-index: 1;
+	margin-left: 45%;
+	margin-top: -27%;
+
+}
+
+/* icon windows key */
+#wds {
+	margin-top: -50px;
+}
+
+/* area text */
+textarea {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: .8rem;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
